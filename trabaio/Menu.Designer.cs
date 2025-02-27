@@ -48,7 +48,7 @@ partial class Menu
         user_txt.Location = new Point(752, 159);
         user_txt.Margin = new Padding(3, 37, 3, 37);
         user_txt.Name = "user_txt";
-        user_txt.Size = new Size(303, 26);
+        user_txt.Size = new Size(303, 35);
         user_txt.TabIndex = 0;
         // 
         // pass_txt
@@ -56,13 +56,13 @@ partial class Menu
         pass_txt.Location = new Point(752, 259);
         pass_txt.Margin = new Padding(3, 37, 3, 37);
         pass_txt.Name = "pass_txt";
-        pass_txt.Size = new Size(303, 26);
+        pass_txt.Size = new Size(303, 35);
         pass_txt.TabIndex = 1;
         // 
         // label2
         // 
         label2.BackColor = Color.Transparent;
-        label2.Location = new Point(752, 112);
+        label2.Location = new Point(752, 117);
         label2.Name = "label2";
         label2.RightToLeft = RightToLeft.No;
         label2.Size = new Size(369, 43);
@@ -73,10 +73,10 @@ partial class Menu
         // label3
         // 
         label3.BackColor = Color.Transparent;
-        label3.Location = new Point(752, 237);
+        label3.Location = new Point(752, 231);
         label3.Name = "label3";
         label3.RightToLeft = RightToLeft.No;
-        label3.Size = new Size(383, 21);
+        label3.Size = new Size(383, 30);
         label3.TabIndex = 3;
         label3.Text = "SENHA";
         label3.TextAlign = ContentAlignment.BottomLeft;
@@ -112,10 +112,10 @@ partial class Menu
         // 
         pictureBox2.BackColor = Color.Transparent;
         pictureBox2.Image = Properties.Resources.perfil_de_usuario;
-        pictureBox2.Location = new Point(690, 137);
+        pictureBox2.Location = new Point(690, 138);
         pictureBox2.Margin = new Padding(3, 16, 3, 16);
         pictureBox2.Name = "pictureBox2";
-        pictureBox2.Size = new Size(56, 48);
+        pictureBox2.Size = new Size(56, 56);
         pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
         pictureBox2.TabIndex = 6;
         pictureBox2.TabStop = false;
@@ -124,21 +124,21 @@ partial class Menu
         // 
         pictureBox3.BackColor = Color.Transparent;
         pictureBox3.Image = Properties.Resources.trancar;
-        pictureBox3.Location = new Point(690, 237);
+        pictureBox3.Location = new Point(690, 231);
         pictureBox3.Margin = new Padding(3, 16, 3, 16);
         pictureBox3.Name = "pictureBox3";
-        pictureBox3.Size = new Size(56, 48);
+        pictureBox3.Size = new Size(56, 63);
         pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
         pictureBox3.TabIndex = 7;
         pictureBox3.TabStop = false;
         // 
         // Menu
         // 
-        AutoScaleDimensions = new SizeF(8F, 20F);
+        AutoScaleDimensions = new SizeF(11F, 29F);
         AutoScaleMode = AutoScaleMode.Font;
         BackgroundImage = Properties.Resources.planodefundohome;
         BackgroundImageLayout = ImageLayout.Stretch;
-        ClientSize = new Size(1130, 526);
+        ClientSize = new Size(1130, 520);
         Controls.Add(pictureBox3);
         Controls.Add(pictureBox2);
         Controls.Add(pictureBox1);
