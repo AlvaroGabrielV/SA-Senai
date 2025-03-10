@@ -1,18 +1,18 @@
-    using System.Windows.Forms;
+using System.Windows.Forms;
 
-    namespace trabaio
+namespace trabaio
     {
-        public class Cargos
-        {
-            public static string cargo = "Gerente"; // Essa variável armazena o cargo do usuário logado
-        }
+    public class Cargos
+    {
+        public static string cargo = "Gerente"; // Essa variável armazena o cargo do usuário logado
+    }
 
-        public partial class Menu : Form
+    public partial class Menu : Form
+    {
+        public Menu()
         {
-            public Menu()
-            {
                 InitializeComponent();
-            }
+        }
 
             private void button_login_Click(object sender, EventArgs e)
             {
