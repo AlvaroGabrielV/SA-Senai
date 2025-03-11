@@ -86,6 +86,7 @@ partial class Home
         delete_cliente = new Button();
         alter_btn = new Button();
         gerenciarEstoque = new TabPage();
+        quantidadeVenda_Int = new NumericUpDown();
         createVenda_btn = new Button();
         vendaGrid = new DataGridView();
         produtoVenda_box = new ComboBox();
@@ -99,7 +100,6 @@ partial class Home
         clientevenda = new ComboBox();
         button1 = new Button();
         pictureBox1 = new PictureBox();
-        quantidadeVenda_Int = new NumericUpDown();
         Clientes.SuspendLayout();
         cadastrarCliente.SuspendLayout();
         ((ISupportInitialize)pictureBox4).BeginInit();
@@ -112,9 +112,9 @@ partial class Home
         ((ISupportInitialize)pictureBox2).BeginInit();
         ((ISupportInitialize)clientesGridView).BeginInit();
         gerenciarEstoque.SuspendLayout();
+        ((ISupportInitialize)quantidadeVenda_Int).BeginInit();
         ((ISupportInitialize)vendaGrid).BeginInit();
         ((ISupportInitialize)pictureBox1).BeginInit();
-        ((ISupportInitialize)quantidadeVenda_Int).BeginInit();
         SuspendLayout();
         // 
         // Clientes
@@ -359,7 +359,7 @@ partial class Home
         // 
         // solicitarEstoque_btn
         // 
-        solicitarEstoque_btn.Location = new Point(603, 583);
+        solicitarEstoque_btn.Location = new Point(542, 422);
         solicitarEstoque_btn.Margin = new Padding(4, 3, 4, 3);
         solicitarEstoque_btn.Name = "solicitarEstoque_btn";
         solicitarEstoque_btn.Size = new Size(161, 61);
@@ -496,7 +496,7 @@ partial class Home
         // pictureBox3
         // 
         pictureBox3.Image = Properties.Resources.logosemfundo;
-        pictureBox3.Location = new Point(570, 314);
+        pictureBox3.Location = new Point(636, 325);
         pictureBox3.Margin = new Padding(4, 3, 4, 3);
         pictureBox3.Name = "pictureBox3";
         pictureBox3.Size = new Size(411, 263);
@@ -540,7 +540,7 @@ partial class Home
         alterdados_panel.Controls.Add(alternome_label);
         alterdados_panel.Controls.Add(alteruser_txt);
         alterdados_panel.Controls.Add(pictureBox2);
-        alterdados_panel.Location = new Point(0, 307);
+        alterdados_panel.Location = new Point(0, 322);
         alterdados_panel.Margin = new Padding(4, 3, 4, 3);
         alterdados_panel.Name = "alterdados_panel";
         alterdados_panel.Size = new Size(1119, 238);
@@ -549,7 +549,7 @@ partial class Home
         // cpf_txt1
         // 
         cpf_txt1.Culture = new System.Globalization.CultureInfo("en-US");
-        cpf_txt1.Location = new Point(416, 110);
+        cpf_txt1.Location = new Point(416, 134);
         cpf_txt1.Margin = new Padding(4, 3, 4, 3);
         cpf_txt1.Mask = "000.000.000-00";
         cpf_txt1.Name = "cpf_txt1";
@@ -558,19 +558,20 @@ partial class Home
         // 
         // editSave_btn
         // 
-        editSave_btn.Location = new Point(410, 144);
+        editSave_btn.Location = new Point(410, 168);
         editSave_btn.Margin = new Padding(4, 3, 4, 3);
         editSave_btn.Name = "editSave_btn";
         editSave_btn.Size = new Size(233, 51);
         editSave_btn.TabIndex = 19;
         editSave_btn.Text = "SALVAR";
         editSave_btn.UseVisualStyleBackColor = true;
+        editSave_btn.BindingContextChanged += editSave_btn_Click;
         // 
         // altercpf_label
         // 
         altercpf_label.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
         altercpf_label.ImageAlign = ContentAlignment.BottomLeft;
-        altercpf_label.Location = new Point(416, 85);
+        altercpf_label.Location = new Point(416, 109);
         altercpf_label.Margin = new Padding(4, 0, 4, 0);
         altercpf_label.Name = "altercpf_label";
         altercpf_label.Size = new Size(102, 25);
@@ -705,7 +706,7 @@ partial class Home
         // pictureBox2
         // 
         pictureBox2.Image = Properties.Resources.logosemfundo;
-        pictureBox2.Location = new Point(372, -34);
+        pictureBox2.Location = new Point(400, -18);
         pictureBox2.Margin = new Padding(4, 3, 4, 3);
         pictureBox2.Name = "pictureBox2";
         pictureBox2.Size = new Size(257, 152);
@@ -732,7 +733,7 @@ partial class Home
         // 
         // delete_cliente
         // 
-        delete_cliente.Location = new Point(688, 303);
+        delete_cliente.Location = new Point(648, 303);
         delete_cliente.Margin = new Padding(4, 3, 4, 3);
         delete_cliente.Name = "delete_cliente";
         delete_cliente.Size = new Size(230, 53);
@@ -743,7 +744,7 @@ partial class Home
         // 
         // alter_btn
         // 
-        alter_btn.Location = new Point(225, 303);
+        alter_btn.Location = new Point(162, 303);
         alter_btn.Margin = new Padding(4, 3, 4, 3);
         alter_btn.Name = "alter_btn";
         alter_btn.Size = new Size(230, 53);
@@ -777,6 +778,17 @@ partial class Home
         gerenciarEstoque.TabIndex = 3;
         gerenciarEstoque.Text = "Gerenciar Vendas";
         gerenciarEstoque.UseVisualStyleBackColor = true;
+        // 
+        // quantidadeVenda_Int
+        // 
+        quantidadeVenda_Int.BorderStyle = BorderStyle.FixedSingle;
+        quantidadeVenda_Int.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        quantidadeVenda_Int.Location = new Point(311, 370);
+        quantidadeVenda_Int.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
+        quantidadeVenda_Int.Name = "quantidadeVenda_Int";
+        quantidadeVenda_Int.Size = new Size(128, 29);
+        quantidadeVenda_Int.TabIndex = 20;
+        quantidadeVenda_Int.TextAlign = HorizontalAlignment.Center;
         // 
         // createVenda_btn
         // 
@@ -924,17 +936,6 @@ partial class Home
         pictureBox1.TabIndex = 19;
         pictureBox1.TabStop = false;
         // 
-        // quantidadeVenda_Int
-        // 
-        quantidadeVenda_Int.BorderStyle = BorderStyle.FixedSingle;
-        quantidadeVenda_Int.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        quantidadeVenda_Int.Location = new Point(311, 370);
-        quantidadeVenda_Int.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
-        quantidadeVenda_Int.Name = "quantidadeVenda_Int";
-        quantidadeVenda_Int.Size = new Size(128, 29);
-        quantidadeVenda_Int.TabIndex = 20;
-        quantidadeVenda_Int.TextAlign = HorizontalAlignment.Center;
-        // 
         // Home
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
@@ -970,9 +971,9 @@ partial class Home
         ((ISupportInitialize)clientesGridView).EndInit();
         gerenciarEstoque.ResumeLayout(false);
         gerenciarEstoque.PerformLayout();
+        ((ISupportInitialize)quantidadeVenda_Int).EndInit();
         ((ISupportInitialize)vendaGrid).EndInit();
         ((ISupportInitialize)pictureBox1).EndInit();
-        ((ISupportInitialize)quantidadeVenda_Int).EndInit();
         ResumeLayout(false);
     }
 
